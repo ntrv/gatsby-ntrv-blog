@@ -79,7 +79,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -o gh-pages",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -o gh-pages -b master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.+(js|json|md)\"",
     "lint": "eslint --config .eslintrc.yml --ext .js,.jsx --ignore-pattern public .",
