@@ -3,3 +3,4 @@ rules:
     ja-space-between-halt-and-full-width:
       space: always
   preset-japanese: true
+  preset-ja-technical-writing: true
