@@ -8,10 +8,12 @@ const Footer = ({ author, title }) => (
       <hr className="border-primary" />
       <p>
         {title}
+        {/*
         <Link to="/profile/">
           <br />
           <strong>{author}</strong> on Profile
         </Link>
+        */}
       </p>
     </div>
   </div>
