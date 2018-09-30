@@ -81,7 +81,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.+(js|json|md)\"",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint": "eslint --config .eslintrc.yml --ext .js,.jsx --ignore-pattern public .",
     "lint:text": "textlint src/pages/**/index.md",
     "lint:textfix": "textlint --fix src/pages/**/index.md",
     "precommit": "lint-staged",
