@@ -1,4 +1,3 @@
-filters:
 rules:
   preset-ja-spacing:
     ja-space-between-halt-and-full-width:
