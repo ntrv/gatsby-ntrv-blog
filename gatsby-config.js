@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'NTRV blog',
     description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://ntrv.github.io',
+    siteUrl: 'https://ntrv.github.io/gatsby-ntrv-blog/',
     author: 'ntrv',
     twitter: 'ntrv11',
     adsense: '',
