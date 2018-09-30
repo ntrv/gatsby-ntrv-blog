@@ -7,7 +7,7 @@ module.exports = {
     twitter: 'ntrv11',
     adsense: '',
   },
-  pathPrefix: '/',
+  pathPrefix: '/gatsby-ntrv-blog/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
