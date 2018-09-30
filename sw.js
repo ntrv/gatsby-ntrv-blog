@@ -26,21 +26,21 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-602caa8cc18da1e3f429.js"
+    "url": "webpack-runtime-25769df5ce5ea82fbf19.js"
   },
   {
-    "url": "app-22cf570d37a0994aff11.js"
+    "url": "app-7a96870c4cf86f61f245.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-6088e82717ab0371c148.js"
   },
   {
     "url": "index.html",
-    "revision": "181524f494c492d7510be53d273fc350"
+    "revision": "01b7d2c47a2a203acfe01f7caa85f193"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "52b0be0b8219a98354704b378369e17f"
+    "revision": "62c03bdaae9ca07e1f75b550d47a0b85"
   },
   {
     "url": "1.e5ce1b133e76cde80e82.css"
@@ -49,7 +49,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-index-js.0f8909fe84e3230b0b82.css"
   },
   {
-    "url": "0.ee7233a59c0a6921fa74.css"
+    "url": "0.3409f830f345f377ef5f.css"
   },
   {
     "url": "component---src-pages-index-js-ab1509d80cd0ed5e7305.js"
@@ -58,14 +58,14 @@ self.__precacheManifest = [
     "url": "0-e64efe711dd2a48a3701.js"
   },
   {
-    "url": "1-a179ae9a589c20a89329.js"
+    "url": "1-7435c8507bcd6649b66a.js"
   },
   {
     "url": "2-e2d27e4cbb87af0f9acc.js"
   },
   {
-    "url": "static/d/261/path---index-6a9-kySIzFWSUS21uP7q5deTC0uJG8.json",
-    "revision": "205b8497de10bdd075e81ca0a7cbdaba"
+    "url": "static/d/530/path---index-6a9-t3K52yRszCHDeD0QMTebEtFVWvI.json",
+    "revision": "1113f240f858c5697bd7ea69d44c1d9f"
   },
   {
     "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -79,7 +79,7 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/gatsby-ntrv-blog/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
