@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'NTRV blog',
     description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://ntrv.github.io/gatsby-ntrv-blog/',
+    siteUrl: 'https://ntrv.github.io/',
     author: 'ntrv',
     twitter: 'ntrv11',
     adsense: '',
   },
-  pathPrefix: '/gatsby-ntrv-blog/',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
