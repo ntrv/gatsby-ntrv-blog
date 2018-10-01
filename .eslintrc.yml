@@ -29,7 +29,7 @@ rules:
   prettier/prettier:
     - error
     - trailingComma: es5
-      singleQuote: true
-      semi: false
+      singleQuote: false
+      semi: true
   react/jsx-uses-react: error
   react/jsx-uses-vars: error

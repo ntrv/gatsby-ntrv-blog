@@ -1,27 +1,27 @@
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import Img from 'gatsby-image'
-import React from 'react'
-import PropTypes from 'prop-types'
+import { graphql } from "gatsby";
+import get from "lodash/get";
+import Img from "gatsby-image";
+import React from "react";
+import PropTypes from "prop-types";
 
-import Layout from 'components/Layout'
-import Meta from 'components/Meta'
-import Icon from 'components/Icon'
+import Layout from "components/Layout";
+import Meta from "components/Meta";
+import Icon from "components/Icon";
 
-import { siteMetadata } from '../../gatsby-config'
+import { siteMetadata } from "../../gatsby-config";
 
 class Profile extends React.Component {
   render() {
-    const { location, data } = this.props
-    const profile = get(data, 'profile.childImageSharp.fixed')
-    const work1 = get(data, 'work1.childImageSharp.sizes')
-    const work2 = get(data, 'work2.childImageSharp.sizes')
-    const back1 = get(data, 'back1.childImageSharp.sizes')
-    const back2 = get(data, 'back2.childImageSharp.sizes')
+    const { location, data } = this.props;
+    const profile = get(data, "profile.childImageSharp.fixed");
+    const work1 = get(data, "work1.childImageSharp.sizes");
+    const work2 = get(data, "work2.childImageSharp.sizes");
+    const back1 = get(data, "back1.childImageSharp.sizes");
+    const back2 = get(data, "back2.childImageSharp.sizes");
 
     const twButton = ref => {
-      this.twButton = ref
-    }
+      this.twButton = ref;
+    };
 
     return (
       <Layout location={location}>
@@ -165,7 +165,7 @@ class Profile extends React.Component {
           </section>
         </div>
       </Layout>
-    )
+    );
   }
 }
 
@@ -200,9 +200,9 @@ Profile.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
-}
+};
 
-export default Profile
+export default Profile;
 
 export const query = graphql`
   query ProfilePageQuery {
@@ -249,4 +249,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

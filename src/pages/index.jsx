@@ -1,20 +1,20 @@
 /* eslint react/no-array-index-key: 0 */
 
-import { graphql } from 'gatsby'
-import React from 'react'
-import PropTypes from 'prop-types'
-import get from 'lodash/get'
+import { graphql } from "gatsby";
+import React from "react";
+import PropTypes from "prop-types";
+import get from "lodash/get";
 
-import Meta from 'components/Meta'
-import Layout from 'components/Layout'
+import Meta from "components/Meta";
+import Layout from "components/Layout";
 
-import Post from 'templates/Post'
+import Post from "templates/Post";
 
 const BlogIndex = ({ data, location }) => {
-  const posts = get(data, 'remark.posts')
+  const posts = get(data, "remark.posts");
   return (
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
+      <Meta site={get(data, "site.meta")} />
       {posts.map(({ post }, i) => (
         <Post
           data={post}
@@ -25,8 +25,8 @@ const BlogIndex = ({ data, location }) => {
         />
       ))}
     </Layout>
-  )
-}
+  );
+};
 
 BlogIndex.propTypes = {
   data: PropTypes.shape({
@@ -40,9 +40,9 @@ BlogIndex.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
-}
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -82,4 +82,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

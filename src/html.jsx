@@ -1,13 +1,13 @@
 /* eslint react/no-danger: 0 */
 /* eslint react/forbid-prop-types: 0 */
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import 'scss/gatstrap.scss'
-import 'animate.css/animate.css'
-import 'prismjs/themes/prism-okaidia.css'
-import 'font-awesome/css/font-awesome.css'
+import "scss/gatstrap.scss";
+import "animate.css/animate.css";
+import "prismjs/themes/prism-okaidia.css";
+import "font-awesome/css/font-awesome.css";
 
 const HTML = ({ body, postBodyComponents, headComponents }) => (
   <html lang="en">
@@ -32,12 +32,12 @@ const HTML = ({ body, postBodyComponents, headComponents }) => (
       />
     </body>
   </html>
-)
+);
 
 HTML.propTypes = {
   body: PropTypes.string.isRequired,
   postBodyComponents: PropTypes.any.isRequired,
   headComponents: PropTypes.any.isRequired,
-}
+};
 
-export default HTML
+export default HTML;

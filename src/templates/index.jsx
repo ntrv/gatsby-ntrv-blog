@@ -1,28 +1,28 @@
 /* eslint react/no-this-in-sfc: 0 */
 
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import React from 'react'
+import { graphql } from "gatsby";
+import get from "lodash/get";
+import React from "react";
 
-import Meta from 'components/Meta'
-import Layout from 'components/Layout'
+import Meta from "components/Meta";
+import Layout from "components/Layout";
 
-import Post from 'templates/Post'
-import Page from 'templates/Page'
+import Post from "templates/Post";
+import Page from "templates/Page";
 
 const Template = ({ data, location }) => (
   <div>
     <Layout location={location}>
       <Meta
-        title={get(data, 'post.frontmatter.title')}
-        site={get(data, 'site.meta')}
+        title={get(data, "post.frontmatter.title")}
+        site={get(data, "site.meta")}
       />
-      {get(data, 'post.frontmatter.layout') !== 'page' ? (
+      {get(data, "post.frontmatter.layout") !== "page" ? (
         <Post
-          data={get(data, 'post')}
+          data={get(data, "post")}
           options={{
             isIndex: false,
-            adsense: get(data, 'site.meta.adsense'),
+            adsense: get(data, "site.meta.adsense"),
           }}
         />
       ) : (
@@ -30,8 +30,8 @@ const Template = ({ data, location }) => (
       )}
     </Layout>
   </div>
-)
-export default Template
+);
+export default Template;
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {
@@ -66,4 +66,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

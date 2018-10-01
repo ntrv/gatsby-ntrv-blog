@@ -1,8 +1,8 @@
 // import { Link } from 'gatsby'
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import './style.scss'
+import "./style.scss";
 
 // const Footer = ({ author, title }) => (
 const Footer = ({ title }) => (
@@ -20,11 +20,11 @@ const Footer = ({ title }) => (
       </p>
     </div>
   </div>
-)
+);
 
 Footer.propTypes = {
   title: PropTypes.string.isRequired,
   // author: PropTypes.string.isRequired,
-}
+};
 
-export default Footer
+export default Footer;
