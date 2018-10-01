@@ -1,3 +1,5 @@
+/* eslint react/no-this-in-sfc: 0 */
+
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'
