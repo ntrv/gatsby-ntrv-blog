@@ -1,3 +1,5 @@
+/* eslint react/no-danger: 0 */
+
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'

@@ -77,6 +77,3 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   })
 }
-
-/* eslint no-console: error */
-/* eslint no-shadow: error */

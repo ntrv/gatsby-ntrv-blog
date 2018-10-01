@@ -1,3 +1,6 @@
+/* eslint react/no-danger: 0 */
+/* eslint react/forbid-prop-types: 0 */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -8,6 +11,8 @@ import 'font-awesome/css/font-awesome.css'
 
 class HTML extends React.Component {
   render() {
+    const { body, postBodyComponents, headComponents } = this.props
+
     return (
       <html lang="en">
         <head>
@@ -17,7 +22,7 @@ class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          {this.props.headComponents}
+          {headComponents}
           <link
             href="/img/apple-touch-icon.png"
             rel="apple-touch-icon"
@@ -26,11 +31,8 @@ class HTML extends React.Component {
           <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
         </head>
         <body>
-          <div
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
-          {this.props.postBodyComponents}
+          <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
+          {postBodyComponents}
           <script
             async
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"

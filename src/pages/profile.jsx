@@ -19,6 +19,10 @@ class Profile extends React.Component {
     const back1 = get(data, 'back1.childImageSharp.sizes')
     const back2 = get(data, 'back2.childImageSharp.sizes')
 
+    const twButton = ref => {
+      this.twButton = ref
+    }
+
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title="Profile" />
@@ -30,7 +34,7 @@ class Profile extends React.Component {
               <p className="lead text-muted">Front-end engineer.</p>
               <div>
                 <a
-                  ref="twButton"
+                  ref={twButton}
                   href="https://twitter.com/jaxx2104"
                   className="twitter-follow-button"
                   data-show-count="false"
@@ -89,7 +93,10 @@ class Profile extends React.Component {
                 <div className="col-md-12 text-left">
                   <h2 className="section-heading">Features</h2>
                   <p>
-                    I'm a front-end engineer in Japan 🗼
+                    I&apos;m a front-end engineer in Japan
+                    <span role="img" aria-label="tokyo tower">
+                      &#x1F5FC;
+                    </span>
                     <br />
                     Used to be a designer of furniture and architecture.
                     <br />
