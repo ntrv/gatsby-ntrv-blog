@@ -57,9 +57,8 @@ const Post = ({ data, options }) => {
 
 export default Post
 
-const getAd = (isIndex, adsense) => {
-  return !isIndex ? <Adsense clientId={adsense} slotId="" format="auto" /> : ''
-}
+const getAd = (isIndex, adsense) =>
+  !isIndex ? <Adsense clientId={adsense} slotId="" format="auto" /> : ''
 
 const getDescription = body => {
   body = body.replace(/<blockquote>/g, '<blockquote class="blockquote">')
@@ -85,13 +84,11 @@ const Button = ({ path, label, primary }) => (
 )
 
 const Badges = ({ items, primary }) =>
-  map(items, (item, i) => {
-    return (
-      <span
-        className={`badge ${primary ? 'badge-primary' : 'badge-secondary'}`}
-        key={i}
-      >
-        {item}
-      </span>
-    )
-  })
+  map(items, (item, i) => (
+    <span
+      className={`badge ${primary ? 'badge-primary' : 'badge-secondary'}`}
+      key={i}
+    >
+      {item}
+    </span>
+  ))
