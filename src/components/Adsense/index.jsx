@@ -29,8 +29,8 @@ class Adsense extends React.Component {
 }
 
 Adsense.defaultProps = {
-  clientId: "",
-  slotId: "",
+  clientId: '',
+  slotId: '',
 }
 
 Adsense.propTypes = {

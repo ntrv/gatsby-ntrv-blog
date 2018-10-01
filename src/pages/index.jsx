@@ -33,7 +33,7 @@ BlogIndex.propTypes = {
     },
     site: {
       meta: PropTypes.string.isRequired,
-    }
+    },
   }),
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,

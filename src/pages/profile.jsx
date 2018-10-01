@@ -167,32 +167,32 @@ Profile.propTypes = {
     profile: {
       childImageSharp: {
         fixed: PropTypes.any.isRequired,
-      }
+      },
     },
     work1: {
       childImageSharp: {
         sizes: PropTypes.string.isRequired,
-      }
+      },
     },
     work2: {
       childImageSharp: {
         sizes: PropTypes.string.isRequired,
-      }
+      },
     },
     back1: {
       childImageSharp: {
         sizes: PropTypes.string.isRequired,
-      }
+      },
     },
     back2: {
       childImageSharp: {
         sizes: PropTypes.string.isRequired,
-      }
-    }
+      },
+    },
   }),
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
-  })
+  }),
 }
 
 export default Profile

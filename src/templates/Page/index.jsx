@@ -11,8 +11,8 @@ Page.propTypes = {
   data: {
     post: {
       html: PropTypes.string.isRequired,
-    }
-  }
+    },
+  },
 }
 
 export default Page

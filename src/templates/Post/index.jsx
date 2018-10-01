@@ -68,7 +68,7 @@ Post.propTypes = {
       image: {
         childImageSharp: {
           fixed: PropTypes.any.isRequired,
-        }
+        },
       },
     },
     html: PropTypes.string.isRequired,
