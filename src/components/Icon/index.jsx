@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import {
   faApple,
@@ -36,5 +37,9 @@ const Icon = ({ name }) => (
     <FontAwesomeIcon icon={['fab', name]} />
   </div>
 )
+
+Icon.propTypes = {
+  name: PropTypes.string.isRequired,
+}
 
 export default Icon

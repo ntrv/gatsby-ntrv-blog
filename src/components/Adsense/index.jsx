@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class Adsense extends React.Component {
   componentDidMount() {
@@ -26,4 +27,15 @@ class Adsense extends React.Component {
     )
   }
 }
+
+Adsense.defaultProps = {
+  clientId: "",
+  slotId: "",
+}
+
+Adsense.propTypes = {
+  clientId: PropTypes.string,
+  format: PropTypes.string.isRequired,
+}
+
 export default Adsense

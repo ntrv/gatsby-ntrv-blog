@@ -1,9 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
 import get from 'lodash/get'
 
 const Meta = ({ site, title }) => {
   const siteTitle = get(site, 'title')
+
+  // TODO
   title = title ? `${title} | ${siteTitle}` : siteTitle
   return (
     <Helmet
@@ -32,4 +35,15 @@ const Meta = ({ site, title }) => {
     />
   )
 }
+
+Meta.propTypes = {
+  title: PropTypes.string.isRequired,
+  site: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    twitter: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    siteUrl: PropTypes.string.isRequired,
+  }),
+}
+
 export default Meta

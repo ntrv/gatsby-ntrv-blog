@@ -1,10 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import 'scss/gatstrap.scss'
 import 'animate.css/animate.css'
 import 'prismjs/themes/prism-okaidia.css'
 import 'font-awesome/css/font-awesome.css'
 
-export default class HTML extends React.Component {
+class HTML extends React.Component {
   render() {
     return (
       <html lang="en">
@@ -38,3 +40,11 @@ export default class HTML extends React.Component {
     )
   }
 }
+
+HTML.propTypes = {
+  body: PropTypes.string.isRequired,
+  postBodyComponents: PropTypes.any.isRequired,
+  headComponents: PropTypes.any.isRequired,
+}
+
+export default HTML

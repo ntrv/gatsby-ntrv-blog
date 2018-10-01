@@ -2,10 +2,12 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import Icon from 'components/Icon'
+
 import { siteMetadata } from '../../gatsby-config'
 
 class Profile extends React.Component {
@@ -158,6 +160,39 @@ class Profile extends React.Component {
       </Layout>
     )
   }
+}
+
+Profile.propTypes = {
+  data: PropTypes.shape({
+    profile: {
+      childImageSharp: {
+        fixed: PropTypes.any.isRequired,
+      }
+    },
+    work1: {
+      childImageSharp: {
+        sizes: PropTypes.string.isRequired,
+      }
+    },
+    work2: {
+      childImageSharp: {
+        sizes: PropTypes.string.isRequired,
+      }
+    },
+    back1: {
+      childImageSharp: {
+        sizes: PropTypes.string.isRequired,
+      }
+    },
+    back2: {
+      childImageSharp: {
+        sizes: PropTypes.string.isRequired,
+      }
+    }
+  }),
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  })
 }
 
 export default Profile

@@ -3,9 +3,11 @@ import get from 'lodash/get'
 import React from 'react'
 import map from 'lodash/map'
 import Img from 'gatsby-image'
+import PropTypes from 'prop-types'
 
 import Adsense from 'components/Adsense'
 import Footer from 'components/Footer'
+
 import './style.scss'
 
 const Post = ({ data, options }) => {
@@ -53,6 +55,28 @@ const Post = ({ data, options }) => {
       </div>
     </div>
   )
+}
+
+Post.propTypes = {
+  data: PropTypes.shape({
+    frontmatter: {
+      categoly: PropTypes.string.isRequired,
+      tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+      description: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+      image: {
+        childImageSharp: {
+          fixed: PropTypes.any.isRequired,
+        }
+      },
+    },
+    html: PropTypes.string.isRequired,
+  }),
+  options: PropTypes.shape({
+    isIndex: PropTypes.bool.isRequired,
+    adsense: PropTypes.string.isRequired,
+  }),
 }
 
 export default Post

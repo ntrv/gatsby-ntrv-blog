@@ -3,6 +3,7 @@ import emergence from 'emergence.js'
 
 import Navi from 'components/Navi'
 import Footer from 'components/Footer'
+
 import { siteMetadata } from '../../../gatsby-config'
 
 import 'modern-normalize/modern-normalize.css'

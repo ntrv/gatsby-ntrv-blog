@@ -1,10 +1,12 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import PropTypes from 'prop-types'
 import get from 'lodash/get'
 
-import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
+
+import Post from 'templates/Post'
 
 const BlogIndex = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
@@ -22,6 +24,20 @@ const BlogIndex = ({ data, location }) => {
       ))}
     </Layout>
   )
+}
+
+BlogIndex.propTypes = {
+  data: PropTypes.shape({
+    remark: {
+      posts: PropTypes.string.isRequired,
+    },
+    site: {
+      meta: PropTypes.string.isRequired,
+    }
+  }),
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }),
 }
 
 export default BlogIndex

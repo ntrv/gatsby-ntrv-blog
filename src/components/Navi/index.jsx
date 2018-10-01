@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
 class Navi extends React.Component {
   render() {
@@ -41,6 +42,13 @@ class Navi extends React.Component {
       </nav>
     )
   }
+}
+
+Navi.propTypes = {
+  title: PropTypes.string.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }),
 }
 
 export default Navi
