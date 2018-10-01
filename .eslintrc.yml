@@ -8,7 +8,7 @@ parserOptions:
   ecmaFeatures:
     jsx: true
 extends:
-  - airbnb-base
+  - airbnb
   - prettier
   - prettier/react
 plugins:
