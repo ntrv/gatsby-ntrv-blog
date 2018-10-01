@@ -5,19 +5,18 @@ import get from 'lodash/get'
 
 const Meta = ({ site, title }) => {
   const siteTitle = get(site, 'title')
+  const titleName = title ? `${title} | ${siteTitle}` : siteTitle
 
-  // TODO
-  title = title ? `${title} | ${siteTitle}` : siteTitle
   return (
     <Helmet
-      title={title}
+      title={titleName}
       meta={[
         { name: 'twitter:card', content: 'summary' },
         {
           name: 'twitter:site',
           content: `@${get(site, 'twitter')}`,
         },
-        { property: 'og:title', content: title },
+        { property: 'og:title', content: titleName },
         { property: 'og:type', content: 'website' },
         {
           property: 'og:description',
@@ -43,7 +42,7 @@ Meta.propTypes = {
     twitter: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     siteUrl: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 }
 
 export default Meta

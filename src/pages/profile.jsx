@@ -189,10 +189,10 @@ Profile.propTypes = {
         sizes: PropTypes.string.isRequired,
       },
     },
-  }),
+  }).isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 }
 
 export default Profile

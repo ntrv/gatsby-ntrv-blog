@@ -1,3 +1,5 @@
+/* eslint react/no-array-index-key: 0 */
+
 import { graphql } from 'gatsby'
 import React from 'react'
 import PropTypes from 'prop-types'
@@ -34,10 +36,10 @@ BlogIndex.propTypes = {
     site: {
       meta: PropTypes.string.isRequired,
     },
-  }),
+  }).isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 }
 
 export default BlogIndex

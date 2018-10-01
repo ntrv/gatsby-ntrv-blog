@@ -31,3 +31,5 @@ rules:
     - trailingComma: es5
       singleQuote: true
       semi: false
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error

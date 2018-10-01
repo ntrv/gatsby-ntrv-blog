@@ -35,6 +35,7 @@ Adsense.defaultProps = {
 
 Adsense.propTypes = {
   clientId: PropTypes.string,
+  slotId: PropTypes.string,
   format: PropTypes.string.isRequired,
 }
 

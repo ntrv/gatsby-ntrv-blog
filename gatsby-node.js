@@ -1,3 +1,6 @@
+/* eslint no-console: off */
+/* eslint no-shadow: off */
+
 const each = require('lodash/each')
 const Promise = require('bluebird')
 const path = require('path')
@@ -74,3 +77,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   })
 }
+
+/* eslint no-console: error */
+/* eslint no-shadow: error */

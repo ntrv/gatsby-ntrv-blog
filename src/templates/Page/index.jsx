@@ -8,11 +8,11 @@ const Page = ({ data }) => (
 )
 
 Page.propTypes = {
-  data: {
+  data: PropTypes.shape({
     post: {
       html: PropTypes.string.isRequired,
     },
-  },
+  }).isRequired,
 }
 
 export default Page

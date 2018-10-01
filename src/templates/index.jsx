@@ -15,7 +15,7 @@ const Template = ({ data, location }) => (
         title={get(data, 'post.frontmatter.title')}
         site={get(data, 'site.meta')}
       />
-      {get(data, 'post.frontmatter.layout') != 'page' ? (
+      {get(data, 'post.frontmatter.layout') !== 'page' ? (
         <Post
           data={get(data, 'post')}
           options={{
