@@ -75,8 +75,8 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -o gh-pages -b master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.+(js|json|md)\"",
-    "lint": "eslint --config .eslintrc.yml --ext .js,.jsx --ignore-pattern public .",
-    "lint:fix": "eslint --fix --config .eslintrc.yml --ext .js,.jsx --ignore-pattern public .",
+    "lint": "eslint --config .eslintrc.yml --ext .js,.jsx .",
+    "lint:fix": "eslint --fix --config .eslintrc.yml --ext .js,.jsx .",
     "lint:text": "textlint src/pages/**/index.md",
     "lint:textfix": "textlint --fix src/pages/**/index.md",
     "test": "prettier --write \"**/*.+(js|jsx|json|css|scss)\""
